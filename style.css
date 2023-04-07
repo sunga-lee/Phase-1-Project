@@ -1,0 +1,37 @@
+.voting-card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    background-color: burlywood;
+    
+}
+
+.dog {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+
+button {
+	padding: 10px;
+	background-color: #008CBA;
+	color: brown;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #006CBA;
+}
+.header{
+    justify-items: center;
+}

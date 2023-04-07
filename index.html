@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Dogs Voting Card</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 >Dogs Voting Card</h1>
+	<div class="voting-card">
+		<div class="dog">
+			<img src="german-shepherd.jpg" alt="German Shepherd">
+			<h2>German Shepherd</h2>
+			<p>Total Votes: <span id="gs-votes">0</span></p>
+			<button onclick="vote('gs')">Vote</button>
+		</div>
+		<div class="dog">
+			<img src="boerbeal.jpg" alt="Boerbeal">
+			<h2>Boerbeal</h2>
+			<p>Total Votes: <span id="bb-votes">0</span></p>
+			<button onclick="vote('bb')">Vote</button>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
