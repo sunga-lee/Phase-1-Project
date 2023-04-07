@@ -17,12 +17,13 @@ function vote(dog) {
 			alert("You've already voted for Boerbeal!");
 		}
 	}
+    
     fetch( "https://upload.wikimedia.org/wikipedia/commons/d/d0/German_Shepherd_-_DSC_0346_%2810096362833%29.jpg")
     .then (response =>response.json)
     .then (data => console.log (data))
 
     
-    fetch ("")
+    fetch ("image.png")
     .then (response =>response.json)
     .then (data => console.log (data))
 }
@@ -35,4 +36,49 @@ voteButton.addEventListener("click", function() {
   countDisplay.textContent = count;
 });
 
-
+function updateVotes(number) {
+    let number = {
+      number: number,
+      id: 0,
+    };
+  
+    data = JSON.stringify(data);
+  
+    let url = ("https://upload.wikimedia.org/wikipedia/commons/d/d0/German_Shepherd_-_DSC_0346_%2810096362833%29.jpg");
+    fetch(url, {
+      method: "PUT",
+      body: number,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((number) => {
+        console.log(number);
+        setVotes();
+       
+      });
+  }
+  function updateVotes(number) {
+    let number = {
+      number: number,
+      id: 0,
+    };
+  
+    data = JSON.stringify(data);
+  
+    let url = "image.png";
+    fetch(url, {
+      method: "PUT",
+      body: number,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((number) => {
+        console.log(number);
+        setVotes();
+       
+      });
+  } 
